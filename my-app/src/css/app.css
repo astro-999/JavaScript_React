@@ -28,3 +28,23 @@
     gap: 18px;
   }
 }
+
+/* Nav link styles with proper hover/active support */
+.nav-link-custom {
+  text-decoration: none;
+  color: #43096d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4c4747;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom:active {
+  background-color: black;
+  color: lightgray;
+}
+

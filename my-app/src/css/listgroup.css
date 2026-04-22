@@ -1,0 +1,25 @@
+/* css for list group — use #root prefix to beat Bootstrap specificity */
+#root .list-group-item {
+    cursor: pointer;
+}
+
+#root .list-group-item:hover {
+    background-color: #6a91b7;
+}
+
+#root .list-group-item.active {
+    background-color: #142b43;
+    border-color: #ff0055;
+    color: #aa1d77;
+}
+#root .list-group.size{
+    width : 450px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

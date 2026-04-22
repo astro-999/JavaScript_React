@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './form.css';
+import '../css/form.css';
 
 function Form() {
   // useState for current form fields

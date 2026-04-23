@@ -6,15 +6,14 @@ import About from './pages/about.jsx'
 import Form from './pages/form.jsx'
 import ListGroup from './pages/ListGroup.jsx'
 import './css/app.css'
-import User from './User.jsx'
+
 
 
 function App() {
 
   return (
       <BrowserRouter>
-        <Navibar/>
-        <User/>
+        <Navibar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

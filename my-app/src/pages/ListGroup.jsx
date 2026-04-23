@@ -1,6 +1,6 @@
 import '../css/listgroup.css'
-
 import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 
@@ -11,8 +11,8 @@ function ListGroup() {
 
 
     return (
-        <>
-            <h1 className="text-center" >List Group</h1>
+        <div class = 'p-3 mb-2 bg-success-subtle text-success-emphasis'  style={{width: '400px', margin: '20px auto', borderRadius: '5px'}}>
+            <h2 className="text-center"  class="text-primary" >List Group</h2>
             {items.length === 0 && <p className="text-center">No items found</p>}
 
             <ul className="list-group "  >
@@ -25,7 +25,7 @@ function ListGroup() {
                     </li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }
 

@@ -11,7 +11,7 @@ function User() {
         <>
             <UserContext.Provider value={user}>
                 <div>
-                    <h1>User Name : </h1>
+                 <h2>  User Name :</h2>
                 </div>
         <ShowUser />
         </UserContext.Provider >

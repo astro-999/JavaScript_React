@@ -2,40 +2,19 @@ import '../css/home.css';
 // make  a good home page for a website with icons and images and text and make it responsive and attractive with a good css design
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
-
-const Linkstyle = { 
-    textDecoration: 'brown',
-    color: '#320f4bff',
-    padding: '10px 20px',
-    // border: '1px solid black',
-    borderRadius: '5px',
-    backgroundColor: '#3c2323ff',
-    cursor: 'pointer',
-    // add hover effect
-    '&:hover': {
-        backgroundColor: 'black',
-        color: 'lightgray',
-    },
-    // gap between the home about and contact
-    marginRight: '05px',
-
-    // click effect
-    '&:active': {
-        backgroundColor: 'black',
-        color: 'lightgray',
-    },
-
-};
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import User from '../User.jsx';
 function Home() {
     return (
-        <div className="Home" style={{padding: '20px', textAlign: 'center'}}>
+        <div >
+            <User/>
             <h1>Welcome to the Home Page</h1>   
-            <p>This is the home page of our website. We are glad to have you here. Explore our website to know more about us.</p>
+            <p class="text-warning-emphasis" >This is the home page of our website. 
+                We are glad to have you here. Explore our website to know more about us.</p>
             {/* <img src="https://via.placeholder.com/600x300" alt="Home Image" style={{width: '100%', borderRadius: '5px', marginTop: '20px'}} /> */}
             {/*  button for list only navigate to list page */}
-            <button className="btn-secondary" style={Linkstyle}>
-                <Link to="/listgroup" >List</Link>
+            <button  style={{marginTop: '10px', padding : "10px 20px", backgroundColor :"#dd195d", textColor:'#121111'}} >
+                <Link to="/listgroup" style={{textDecoration: 'none', color: 'inherit'}}>List</Link>
             </button>
 
             
@@ -49,7 +28,7 @@ function Home() {
 
 
 function Color() {
-    const [color, setColor] = useState('red');
+    const [color, setColor] = useState('....');
     return (
             <div>
             <h1>My favourite color is {color}</h1>

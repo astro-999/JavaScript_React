@@ -1,0 +1,50 @@
+
+
+.Navigation {
+  background-color: #73123f;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 10px;
+  padding: 25px;  
+  justify-content: space-between;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+/* Nav link styles with proper hover/active support */
+.nav-link-custom {
+  text-decoration: none;
+  color: #43096d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4c4747;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom:active {
+  background-color: black;
+  color: lightgray;
+}
